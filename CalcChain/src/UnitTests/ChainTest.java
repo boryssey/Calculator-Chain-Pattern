@@ -27,6 +27,7 @@ public class ChainTest {
 
 	@Test
 	public void testAdd() {
+		Assert.assertEquals(999, first.calculate(new CalcRequest("+", 555, 444)), 0.0);
 		Assert.assertEquals(12, first.calculate(new CalcRequest("+", 11, 1)), 0.0);
 	}
 
